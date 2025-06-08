@@ -60,8 +60,13 @@ fun MainScreen(modifier: Modifier = Modifier) {
         modifier = modifier.verticalScroll(rememberScrollState())
     ) {
         Spacer(modifier = Modifier.height(30.dp))
+
         CardSection(
             modifier = Modifier.fillMaxWidth()
         )
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        ActionsSection(modifier = Modifier.fillMaxWidth())
     }
 }
