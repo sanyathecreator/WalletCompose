@@ -18,9 +18,11 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import com.example.walletapp.ui.theme.WalletAppTheme
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -68,5 +70,17 @@ fun MainScreen(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(20.dp))
 
         ActionsSection(modifier = Modifier.fillMaxWidth())
+
+        Spacer(modifier = Modifier.height(40.dp))
+
+        SpendingSection(modifier = Modifier.fillMaxWidth())
     }
+}
+
+fun randomColor(minBrightness: Int = 50): Color {
+    val random = Random.Default
+    val red = random.nextInt(minBrightness, 256)
+    val green = random.nextInt(minBrightness, 256)
+    val blue = random.nextInt(minBrightness, 256)
+    return Color(red, green, blue)
 }
