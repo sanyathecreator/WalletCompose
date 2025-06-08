@@ -1,4 +1,4 @@
-package com.example.walletapp.ui.theme
+package com.example.walletapp
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -21,7 +21,6 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.toFontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.walletapp.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
