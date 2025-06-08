@@ -52,6 +52,8 @@ dependencies {
 
     implementation(libs.androidx.material.icons.extended)
     implementation (libs.compose.charts)
+    implementation("androidx.compose.ui:ui:1.6.7")
+    implementation(libs.bytebeats.compose.charts)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

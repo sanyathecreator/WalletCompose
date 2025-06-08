@@ -74,10 +74,20 @@ fun MainScreen(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(40.dp))
 
         SpendingSection(modifier = Modifier.fillMaxWidth())
+
+        Spacer(modifier = Modifier.height(40.dp))
+
+        SpendingGraph(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 22.dp)
+        )
+
+        Spacer(modifier = Modifier.height(100.dp))
     }
 }
 
-fun randomColor(minBrightness: Int = 50): Color {
+fun randomColor(minBrightness: Int = 80): Color {
     val random = Random.Default
     val red = random.nextInt(minBrightness, 256)
     val green = random.nextInt(minBrightness, 256)
