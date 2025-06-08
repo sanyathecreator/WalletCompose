@@ -133,7 +133,9 @@ fun CardContent(modifier: Modifier = Modifier) {
             Icon(
                 painter = painterResource(id = R.drawable.visa),
                 contentDescription = null,
-                modifier = Modifier.width(100.dp),
+                modifier = Modifier
+                    .width(100.dp)
+                    .offset(0.dp, 16.dp),
                 tint = MaterialTheme.colorScheme.background
             )
         }
